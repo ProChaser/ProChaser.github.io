@@ -1,0 +1,178 @@
+/* ensure that the preferred font 'Inconsolata' is available */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+/* 
+    apply all box sizing as border-box for all html elements.
+    normalize.css may or may not be included, so do this for now.
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inconsolata monospace;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #718245;
+    padding: 20px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 100%;
+    border-width: 10px;    
+    border-style: solid;
+    border-color: #0f0f0f;
+}
+
+main {
+    padding: 0 15%;
+    color: #b99468; 
+    font-size: 14pt;
+    background-color: #0f0f0f;
+    border: 1px solid #0f0f0f; 
+}
+
+nav {
+    align-items: center;
+}
+
+nav > a {
+    font-size: large;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-decoration: none;
+}
+
+img.icon {
+    width: 100%;
+    max-width: 256px;
+    height: 100%;
+    padding: 0;
+}
+
+img.long-icon { /* special class to handle the abnormal aspect ration of one particular image */
+    width: 100%;
+    max-width: 256px;
+    height: 100%;
+    padding: 20px 5px;
+}
+
+section {
+    /* @debug: enable when formatting/alignment overlap issues arise*/
+    /* border: 1px solid #ff0000; */
+    padding: 0 10%;
+}
+
+div {
+    /* @debug: enable when formatting/alignment issues arise*/
+    /* border: 1px solid #0000ff; */
+    margin: 0px;
+    content: fill;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 72pt;
+    margin: 0px;
+}
+
+h2, h3 {
+    color: #718245;
+    text-align: center;
+}
+
+p.indent {
+    text-indent: 20px;
+}
+
+ul {
+    margin: 0px 0px;
+    padding: 0px 5%;
+}
+
+ul > li {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+table {
+    padding: 0 10%;
+}
+
+td {
+    padding: 0;
+}
+
+/* 
+    classes for proportional placement of divs that are desired to be displayed side by side 
+*/
+.bias-left {
+    width: 40%;
+    float: left;
+}
+
+.bias-right {
+    width: 60%;
+    float: right;
+    padding-left: 0px;
+}
+
+.bias-center{
+    width: 100%;
+    float: right;
+    padding-left: 10%;
+}
+
+.bias-split {
+    width: 50%;
+    float: left;
+}
+
+.big-cell {
+    width: 60%;
+}
+
+.little-cell {
+    width: 40%;
+    padding: 5%;
+}
+
+/* 
+    pseudo-classes for some anchor behaviors 
+    @note: a distinction was made between links found in the main "body" of the article and 
+        those that were not to combat the readability across the different sections various
+        backgorund colors.
+*/
+a:link {
+    color: #0f0f0f;
+}
+
+a.body-link:link {
+    color: #718245;
+}
+
+a:visited {
+    color: #0f0f0f;
+}
+
+a.body-link:visited {
+    color: #718245;
+}
+
+a:hover {
+    color: #a0a0a0;
+}
+
+a.body-link:hover {
+    color: #a0a0a0;
+}
+
+a:active {
+    color: #a0a0a0;
+}
+
+a.body-link:active {
+    color: #a0a0a0;
+}

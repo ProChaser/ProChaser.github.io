@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chase Kealey | Dingus at Large</title>
+        <!-- @note: possible need for larger character space... -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <!-- normalze.css -->
+        <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+        <!-- local style sheet -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+    <body>
+        <header>
+            <h1 id="top-of-page">Chase Kealey</h1>
+            <nav>
+                <a href="#introduction">Introduction</a> | 
+                <a href="#about-me">About Me</a> | 
+                <a href="#projects">Projects</a> | 
+                <a href="#contact-info">Contact</a>
+            </nav>
+        </header>
+
+        <!-- main content -->
+        <main>
+            <article>
+                <!-- Introduction -->
+                <section id="introduction">
+                    <h2>Greetings!</h2>
+                    <p>
+                        <!-- who am i? -->
+                        Considering that this website will be hosted on a public repository on Github, expulsion of personal information (educational background, work history, etc.) will be kept to an absolute minimum.  This might leave you asking, “Well what is the point of this site then?”  Join me below to find out some more information about my four legged friends, as well as current and past software projects.
+                    </p>
+                </section>
+                <hr>
+                <!-- About Me -->
+                <section id="about-me">
+                    <h2>Look at Me!</h2>
+                    <p>
+                        <!-- where am i located? -->
+                        <!-- passion for web developement and a collaborative spirit -->
+                        I am an aspiring software developer currently living in the greater Philadelphia area.  My programming background has primarily been in C/C++ with some exposure to Python and Rust.  Most of the time I work on my own, so I look forward to more collaborative opportunities via Thinkful.  But perhaps more interestingly, I have two wonderful dogs that are far more entertaining than me.  Just look at these buddies!
+                    </p>
+                    <!-- about brandy -->
+                    <table id="about-brandy"> 
+                        <tbody>
+                            <tr>
+                                <td class="little-cell">
+                                    <img src="images/brandy-blanket.png" alt="Brandy laying on a blanket." class="icon"/>
+                                </td>
+                                <td class="big-cell">
+                                    <h3> Brandy (aka: Big Bud, The Goofy Girl, etc.) </h3>
+                                    <p>
+                                        This wonderful creature is a three year old Golden Retriever.  She is a certified cuddle buddy and will do just about anything to gain the attention of everyone within scratching distance.  While Brandy loves to lay outside in the shade on the patio during the summer, she also loves to snuggle up with a blanket during the winter months.
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- about daisy -->
+                    <table id="about-daisy">
+                        <tbody>
+                            <tr>
+                                <td class="big-cell">
+                                    <h3> Daisy (aka: Doodles, Little Buddy, etc.) </h3>
+                                    <p>
+                                        Don&apos;t let her small stature fool you!  As an 8 year old Yorkie Bichon Frise mix, this scrappy little friend has the tenacity of dogs 10 times her size and half of her age.  Daisy loves to be comfortable and spares no effort to both procure and secure the most comfortable spot in the room.  She shares her love for blankets with Brandy begrudgingly.
+                                    </p>
+                                </td>
+                                <td class="little-cell">
+                                    <img src="images/daisy-outside.jpg" alt="Daisy under an outdoor table." class="icon"/>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <hr>
+                <!-- interests outside of web developement -->
+                <!-- Software Projects -->
+                <section id="projects">
+                    <!-- Active Projects -->
+                    <h2>Active Projects</h2>
+                    <!-- DingusSvg -->
+                    <h3>DingusSvg:</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="little-cell">
+                                    <img src="images/dingus-svg.gif" alt="Animated Gif of glyph outlines in the font Inconsolata" class="icon"/>
+                                </td>
+                                <td class="big-cell">
+                                    <p>
+                                        This project started off as a toy 3d graphics engine using Vulkan, but quickly evolved into an Svg authoring application.  The goals is to build the application from scratch &hyphen; platform presentation and input layers, application UI, file importing and exporting, etc.  Currently, there are a number of external libraries in use, simply to bootstrap the initial stages of development; however, they will all be replaced.  Currently only three libraries are utilized: 
+                                        <a href="https://github.com/nothings/stb" target="_blank" class="body-link">Stb,</a> single header library used to read and write image data; 
+                                        <a href="https://github.com/g-truc/glm" target="_blank" class="body-link">OpenGL Mathematics (GLM),</a> for core mathematics data structures and algorithms; 
+                                        <a href="https://www.glfw.org/" target="_blank" class="body-link">GLFW,</a> for quick compatibility between platform windowing and input management.
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="big-cell">
+                                    <p>
+                                        Thus far only two types of files have been imported TrueType/OpenType font files and basic path based Svg files.  All ttf outlines are properly loaded with a <a href="https://dl.acm.org/doi/10.1145/1179849.1179997" target="_blank" class="body-link">stencil buffer based shading method</a> to fill the glyphs.  Code points are also properly decoded and a font atlas is being build allowing for work to begin on the UI/UX for the base application.
+                                    </p>
+                                </td>
+                                <td class="little-cell">
+                                    <img src="images/dingus-svg-2.gif" alt="(Animated Gif) Glyph outlines in the font Homemade Apple" class="icon"/>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Untitled Turn-based RPG -->
+                    <h3>Untitled Turn-based RPG:</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="little-cell">
+                                    <img src="images/tbr-combat.gif" alt="(Animated Gif) Prototype demonstration of combat flow" class="icon"/>
+                                </td>
+                                <td class="big-cell">
+                                    <p>
+                                        Inspried by the many classic turn-based RPGs that have come before, this project hopes to capture their spirit and help bring such concepts forward into the modern era.  With elements of a rhythm game, player will amass a party of characters that offer a variety of skills and abilities that enable a large number of playstyles.  Each combat option has a timing/rhythm component that allows for a higher sense of partisipation in an otherwise passive turn based format.
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="big-cell">
+                                    <p>
+                                        For this project I wanted to take a less drastic approach to the from scratch mentality currently being explored through DingusSvg and use some excellent tools like 
+                                        <a href="https://www.unrealengine.com/en-US" target="_blank" class="body-link">
+                                            Unreal Engine.
+                                        </a>  I have been using 
+                                        <a href="https://www.blender.org/" target="_blank" class="body-link">Blender</a> for all of my modeling and animation needs.  
+                                        <a href="https://www.gimp.org/" target="_blank" class="body-link">Gimp</a> 
+                                        is being used for more intricate texture work, although the current art direction does not lend itself to much texturing.  Some additional footage of older animaitons and the expected flow of combat can be found at the following private video listings: 
+                                        <a href="https://www.youtube.com/watch?v=iJZwGTEIwpg" target="_blank" class="body-link">new vs. old animations,</a> 
+                                        <a href="https://www.youtube.com/watch?v=jbL7IqkWoQc" target="_blank" class="body-link">melee combat example,</a> 
+                                        <a href="https://www.youtube.com/watch?v=PABqVmgflek" target="_blank" class="body-link">mage combat example.</a>
+                                    </p>
+                                </td>
+                                <td class="little-cell">
+                                    <img src="images/tbr-drider-idle.gif" alt="(Animated Gif) Prototype drider idle animation" class="icon"/>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>    
+                <!-- previous projects -->
+                <hr>
+                <section>
+                    <div id="previous-projects">
+                        <h2>Previous Projects</h2>
+                        <!-- tic toc toe -->
+                        <div id="tic-toc-toe" class="bias-split">
+                            <h3>Tic-toc-toe</h3>
+                            <div class="bias-left">
+                                <img src="images/tic-toc-toe.gif" alt="screenshot of the game tic-toc-toe" class="long-icon">
+                            </div>
+                            <div class="bias-right">
+                                <p>
+                                    <!-- project summary -->
+                                    You're on the clock with this best of five game of Tic Tac Toe!  Place three pieces in a row to win the round -standard Tic Tac Toe rules apply.  Every match is the best of five rounds. Don't give up if you have a bad first round. 
+                                    <!-- overview of technologies used -->
+                                    Here are some of the technologies and features of the appication:
+                                    <ul>
+                                        <li>Unreal Engine 4</li>
+                                        <li>Windows and Android</li>
+                                        <li>Local and cross platform LAN multiplayer</li>
+                                        <li>Availble for <a href="https://prochaser.itch.io/tictoctoe" target="_blank" class="body-link">download</a>.</li>
+                                        <li>Source available upon request.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- PngStego -->
+                        <div id="png-stego" class="bias-split">
+                            <h3>PngStego</h3>
+                            <div class="bias-center">
+                                <p>
+                                    <!-- project summary -->
+                                    Command line utility that allows for data to be embedded and extracted from PNG image files using a combination of stegonographic methods with minimal degradation of the original image&apos;s quality.  Extracted data can be stored in a file or displayed directly to the terminal.
+                                    <!-- overview of technologies used -->
+                                    Here are some of the technologies and features of the appication:
+                                    <ul>
+                                        <li>C/C++ commandline utility</li>
+                                        <li><a href="https://github.com/nothings/stb" target="_blank" class="body-link">Stb</a> for reading/writing png files</li>
+                                        <li>Availble for <a href="https://prochaser.itch.io/png-stego" target="_blank" class="body-link">download</a>.</li>
+                                        <li>Source code available upon request.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <!-- Contact -->
+                <section id="contact-info">
+                    <h2>Contact Information:</h2>
+                    <p>Feel free to message me on any of the following platforms:  
+                        <ol id="contact-info">
+                            <li><a href="https://www.linkedin.com" target="_blank" class="body-link">LinkedIn</a></li>
+                            <li><a href="https://www.github.com/prochaser" target="_blank" class="body-link">Github</a></li>
+                            <li>Email provided upon request to reduce influx of spam.</li>
+                        </ol>
+                    </p>
+                </section>
+            </article>
+        </main>
+
+        <footer>
+            <!-- legal information pertaining to the site. -->
+            <p>&copy; Chase Kealey 2022</p>
+            <a href="#top-of-page">Top of page</a>
+        </footer>
+    </body> 
+</html>
